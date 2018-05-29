@@ -1,17 +1,18 @@
 {
-  "name": "enjoi",
-  "version": "3.2.3",
-  "license": "Apache 2.0",
-  "description": "Converts json-schema to Joi schema for validation.",
-  "main": "lib/enjoi.js",
+  "name": "enjoi-browser",
+  "version": "1.0.0",
+  "license": "Apache-2.0",
+  "description": "Converts json-schema to Joi schema for validation. (Built for the browser, and forked from Enjoi v3.2.3)",
+  "main": "dist/enjoi.min.js",
   "scripts": {
-    "test": "tape test/*.js",
-    "cover": "istanbul cover tape -- test/*.js",
-    "lint": "eslint lib"
+    "build": "npx rollup -c",
+    "test": "npx tape test/*.js",
+    "cover": "npx istanbul cover tape -- test/*.js",
+    "lint": "npx eslint lib"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/tlivings/enjoi.git"
+    "url": "git://github.com/JustinBeaudry/enjoi-browser.git"
   },
   "engines": {
     "node": ">=6.x"
@@ -25,18 +26,30 @@
     "hapi",
     "hapijs"
   ],
-  "author": "Trevor Livingston",
+  "author": "Justin Beaudry",
   "bugs": {
-    "url": "https://github.com/tlivings/enjoi/issues"
+    "url": "https://github.com/JustinBeaudry/enjoi-browser/issues"
   },
-  "homepage": "https://github.com/tlivings/enjoi",
+  "homepage": "https://github.com/JustinBeaudry/enjoi-browser",
   "dependencies": {
-    "hoek": "^5.0.3",
-    "joi": "^13.3.0"
+    "hoek": "5.x.x",
+    "joi-browser": "13.x.x",
+    "lodash": "4.x.x"
   },
   "devDependencies": {
-    "eslint": "^4.15.0",
-    "istanbul": "^0.4.5",
-    "tape": "^4.8.0"
+    "babel-core": "6.x.x",
+    "babel-plugin-external-helpers": "6.x.x",
+    "babel-preset-env": "1.x.x",
+    "eslint": "4.x.x",
+    "istanbul": "0.x.x",
+    "rollup": "0.x.x",
+    "rollup-plugin-babel": "3.x.x",
+    "rollup-plugin-commonjs": "9.x.x",
+    "rollup-plugin-eslint": "4.x.x",
+    "rollup-plugin-json": "3.x.x",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-resolve": "3.x.x",
+    "rollup-plugin-uglify": "4.x.x",
+    "tape": "4.x.x"
   }
 }

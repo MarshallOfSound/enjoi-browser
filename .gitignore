@@ -66,5 +66,8 @@ typings/
 # nyc
 .nyc_output
 
+# Intellij
+.idea/
+
 # Trash
 .DS_Store
