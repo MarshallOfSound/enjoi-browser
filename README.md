@@ -1,6 +1,4 @@
-[![Build Status](https://travis-ci.org/tlivings/enjoi.png)](https://travis-ci.org/tlivings/enjoi) [![NPM version](https://badge.fury.io/js/enjoi.png)](http://badge.fury.io/js/enjoi)
-
-# enjoi
+# enjoi-browser
 
 Converts a JSON schema to a Joi schema for object validation.
 
