@@ -47,7 +47,7 @@
     "rollup-plugin-commonjs": "9.x.x",
     "rollup-plugin-eslint": "4.x.x",
     "rollup-plugin-json": "3.x.x",
-    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-builtins": "2.x.x",
     "rollup-plugin-node-resolve": "3.x.x",
     "rollup-plugin-uglify": "4.x.x",
     "tape": "4.x.x"
