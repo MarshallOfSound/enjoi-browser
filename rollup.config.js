@@ -4,7 +4,6 @@ import nodeResolve from 'rollup-plugin-node-resolve';
 import eslint from 'rollup-plugin-eslint';
 import json from 'rollup-plugin-json';
 import builtins from 'rollup-plugin-node-builtins';
-import uglify from 'rollup-plugin-uglify';
 
 export default {
   input: './lib/enjoi.js',
@@ -40,7 +39,6 @@ export default {
     json(),
     eslint({
       fix: true
-    }),
-//    uglify()
+    })
   ]
 };
