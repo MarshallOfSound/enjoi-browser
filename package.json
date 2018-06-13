@@ -1,6 +1,6 @@
 {
   "name": "@marshallofsound/enjoi-browser",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "Apache-2.0",
   "description": "Converts json-schema to Joi schema for validation. (Built for the browser, and forked from Enjoi v3.2.3)",
   "main": "lib/enjoi.js",
